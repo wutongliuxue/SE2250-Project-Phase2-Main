@@ -13,8 +13,15 @@ public class GiantAI : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    void onTriggerEnter(Collider other){
-       animator.SetTrigger("Attack_1");
+    void OnCollisionEnter(Collision collision){
+
+        
+
+        if(collision.gameObject.tag == "Player")
+        {
+           animator.SetTrigger("Attack_1");
+           
+        }
     }
 
    
