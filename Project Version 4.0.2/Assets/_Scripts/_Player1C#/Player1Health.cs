@@ -39,10 +39,25 @@ public class Player1Health : MonoBehaviour
 
         
     }
+    void OnCollisionEnter(Collision collision){
+
+        if(collision.gameObject.tag == "Giant")
+        {
+           SendDamage(50);
+           
+        }
+
+        if(collision.gameObject.tag == "Monster")
+        {
+           SendDamage(20);
+           
+        }
+    }
     public void SendDamage(float damageValue)
     {
         curHealth -= damageValue;
         healthBar.value = curHealth;
          animator.SetFloat("Hit",1);
     }
+
 }
