@@ -30,7 +30,7 @@ public class Player1Movement : MonoBehaviour
     {
         transform.Rotate(Vector3.up* Input.GetAxis("Horizontal") *Time.deltaTime* 90);
         Move();
-        if(Input.GetKeyDown(KeyCode.Mouse0))
+        if(Input.GetKeyDown(KeyCode.J))
         {
              Attack();
         }
