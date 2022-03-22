@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 9194140147649877404}
   m_Layer: 0
   m_Name: monster_orc
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -287,7 +287,7 @@ Transform:
   m_GameObject: {fileID: 1342959200176554030}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2845373970606522642}
@@ -330,6 +330,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 9194140147649877404}
   Player: {fileID: 4489917921355422241, guid: ac53466bfcddb4f2cbc6715df14761a6, type: 3}
+  RightFist: {fileID: 7740817826166004986}
+  LeftFist: {fileID: 7507366506324885671}
 --- !u!195 &9194140147649877404
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -340,7 +342,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -1131,6 +1133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8540833379271028895}
+  - component: {fileID: 5181450044922857109}
   m_Layer: 0
   m_Name: hand.R.002
   m_TagString: Untagged
@@ -1154,6 +1157,19 @@ Transform:
   m_Father: {fileID: 8309261832189268897}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &5181450044922857109
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5379561931240346493}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.16
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5386605741788351949
 GameObject:
   m_ObjectHideFlags: 0
@@ -1764,6 +1780,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7059910492206056732}
+  - component: {fileID: 1765628102493355211}
   m_Layer: 0
   m_Name: hand.L
   m_TagString: Untagged
@@ -1789,6 +1806,19 @@ Transform:
   m_Father: {fileID: 3711067515575886178}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1765628102493355211
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7507366506324885671}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7740817826166004986
 GameObject:
   m_ObjectHideFlags: 0
@@ -1798,6 +1828,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8847103197550308387}
+  - component: {fileID: 8022929866861373343}
   m_Layer: 0
   m_Name: hand.R
   m_TagString: Untagged
@@ -1823,6 +1854,19 @@ Transform:
   m_Father: {fileID: 1330504499747360695}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8022929866861373343
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7740817826166004986}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7844127039711966452
 GameObject:
   m_ObjectHideFlags: 0
@@ -1864,6 +1908,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7060483032843687284}
+  - component: {fileID: 666989395177670820}
   m_Layer: 0
   m_Name: hand.L.006_end
   m_TagString: Untagged
@@ -1886,6 +1931,19 @@ Transform:
   m_Father: {fileID: 391694333271223607}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &666989395177670820
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8260767332485490647}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8455768533360625054
 GameObject:
   m_ObjectHideFlags: 0

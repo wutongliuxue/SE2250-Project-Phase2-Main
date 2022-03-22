@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class Player1Health : MonoBehaviour
 {
@@ -31,6 +33,8 @@ public class Player1Health : MonoBehaviour
         if(curHealth < 1)
         {
             animator.SetBool("Death",true);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+
         }
         if(Input.GetKeyUp(KeyCode.G))
         {
