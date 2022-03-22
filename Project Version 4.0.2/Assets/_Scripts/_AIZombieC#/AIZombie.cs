@@ -28,10 +28,28 @@ public class AIZombie : MonoBehaviour
     void Update()
     {
         enemy.SetDestination(Player.position);
-        if (enemy.remainingDistance<4f)
+        if (enemy.remainingDistance<3.5f)
         {
+            StopEnemy();
             GetComponent<Animator>().SetTrigger("Attack");
             
+        }else
+        {
+            GoToTarget();
         }
+    }
+    void OnCollisionEnter(Collision col){
+        if(col.gameObject.name == "Player1 Variant"){
+
+        }
+
+    }
+    void GoToTarget(){
+        enemy.isStopped = false;
+        enemy.SetDestination(Player.position);
+
+    }
+    void StopEnemy(){
+        enemy.isStopped = true;
     }
 }
