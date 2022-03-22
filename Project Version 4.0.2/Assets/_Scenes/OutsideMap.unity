@@ -852,6 +852,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: monster_orc
       objectReference: {fileID: 0}
+    - target: {fileID: 3434670889680837632, guid: 71c2b86e4d7bc49b894c67d7b7a7b83f, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1228608148}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71c2b86e4d7bc49b894c67d7b7a7b83f, type: 3}
 --- !u!1001 &1228608138
@@ -947,6 +951,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b848d114ff3134caa83834a0738a203c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1228608148 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4489917921355422241, guid: ac53466bfcddb4f2cbc6715df14761a6, type: 3}
+  m_PrefabInstance: {fileID: 1228608138}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1383669970
 GameObject:
   m_ObjectHideFlags: 0
