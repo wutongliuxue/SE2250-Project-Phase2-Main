@@ -33,7 +33,7 @@ public class Player1Health : MonoBehaviour
         if(curHealth < 1)
         {
             animator.SetBool("Death",true);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
         }
         if(Input.GetKeyUp(KeyCode.G))
@@ -47,7 +47,7 @@ public class Player1Health : MonoBehaviour
 
         if(collision.gameObject.tag == "Giant")
         {
-           SendDamage(50);
+           SendDamage(30);
            
         }
 
