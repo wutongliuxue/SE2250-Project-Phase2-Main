@@ -36,9 +36,9 @@ public class Player1Health : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
         }
-        if(Input.GetKeyUp(KeyCode.G))
+        if(Input.GetKeyUp(KeyCode.W))
         {
-            SendDamage(Random.Range(10,20));
+            SendDamage(0);
         }
 
         
@@ -47,7 +47,7 @@ public class Player1Health : MonoBehaviour
 
         if(collision.gameObject.tag == "Giant")
         {
-           SendDamage(30);
+           SendDamage(15);
            
         }
 
