@@ -17,7 +17,5 @@ public class GiantAI : MonoBehaviour
        animator.SetTrigger("Attack_1");
     }
 
-    void onTriggerExit(Collider other){
-        animator.SetTrigger("Rest");
-    }
+   
 }
